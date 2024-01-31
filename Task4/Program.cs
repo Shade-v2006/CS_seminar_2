@@ -1,13 +1,19 @@
 ﻿
+/*  Напишите программу, которая выводит третью с конца
+    цифру заданного числа или сообщает, что третьей цифры
+    нет.
+    456 => 4
+    7812 => 8
+    91 => Третьей цифры нет
+*/
 
-
-int num = 14;
+int num = 91;
 
 if (num / 100 != 0)
 {
-    System.Console.WriteLine(num % 10);
+    System.Console.WriteLine(num/100 % 10);
 }
 else
 {
-    System.Console.WriteLine("Такой цифры нет");
+    System.Console.WriteLine("Третьей цифры нет");
 }
